@@ -1,12 +1,12 @@
 import React from 'react';
-import Form from './components/Form/Form';
+import PortfolioForm from './components/PortfolioForm/PortfolioForm';
 import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div>
       <Hero />
-      <Form />
+      <PortfolioForm />
     </div>
   );
 }
