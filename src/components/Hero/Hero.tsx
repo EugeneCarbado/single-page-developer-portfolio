@@ -7,11 +7,12 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section className="bg-portfolio-black pb-10">
+      {/* <div className="grid grid-cols-3"> */}
       <div className="container">
         <div className="circleImage"></div>
         <img className="portfolioImage z-10" src={ProfileImageMobile} />
         <img className="elongCicleImage" src={PatternRings} />
-        <nav className="mx-auto w-[154px] pb-3 flex flex-col justify-center items-center navLinks">
+        <nav className="mx-auto w-[154px] pb-3 flex flex-col justify-center items-center navLinks z-20">
           <p className="text-white text-2xl font-bold">adamkeyes</p>
           <div className="pt-5 flex flex-row w-full justify-between">
             {socialLinks.map((item, key) => (
@@ -30,20 +31,29 @@ const Hero = () => {
           </div>
         </nav>
       </div>
-      {/* <nav className="mx-auto w-[154px] pt-5 flex flex-col justify-center items-center navLinks">
-        <p className="text-white text-2xl">adamkeyes</p>
-        <div className="pt-5 flex flex-row w-full justify-between">
-          {socialLinks.map((item, key) => (
-            <a href={item.hrefLink} target="_blank" rel="noreferrer" key={key}>
-              <img
-                className={item.imageStyles}
-                src={item.imageLink}
-                alt={item.altTag}
-              />
-            </a>
-          ))}
-        </div>
-      </nav> */}
+      {/* <div className="container">
+        <div className="circleImage"></div>
+        <img className="portfolioImage z-10" src={ProfileImageMobile} />
+        <img className="elongCicleImage" src={PatternRings} />
+        <nav className="mx-auto w-[154px] pb-3 flex flex-col justify-center items-center navLinks z-20">
+          <p className="text-white text-2xl font-bold">adamkeyes</p>
+          <div className="pt-5 flex flex-row w-full justify-between">
+            {socialLinks.map((item, key) => (
+              <a
+                href={item.hrefLink}
+                target="_blank"
+                rel="noreferrer"
+                key={key}>
+                <img
+                  className={item.imageStyles}
+                  src={item.imageLink}
+                  alt={item.altTag}
+                />
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div> */}
       <div className="pt-10 flex flex-col items-center">
         <div className="text-[40px] leading-10 text-white text-center font-bold">
           <p>Nice to meet you!</p>

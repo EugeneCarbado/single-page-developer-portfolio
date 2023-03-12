@@ -11,7 +11,7 @@
   grid-area: 3 / 3 / 4 / 4;
   background-image: url('../../images/pattern-circle.svg');
   background-repeat: no-repeat;
-  background-position-x: 44px;
+  background-position: calc(100% + 65px) calc(100% + -1px);
 }
 
 .portfolioImage {
