@@ -1,32 +1,61 @@
 import React from 'react';
-import GitHubIcon from '../../images/icon-github.svg';
-import FrontEndMonterIcon from '../../images/icon-frontend-mentor.svg';
-import LinkedInIcon from '../../images/icon-linkedin.svg';
-import TwitterIcon from '../../images/icon-twitter.svg';
+import {socialLinks} from '../../data/links';
 import ProfileImageMobile from '../../images/image-profile-mobile.webp';
+import PatternRings from '../../images/pattern-rings.svg';
+import './Hero.css';
 
 const Hero = () => {
   return (
-    <section className="bg-portfolio-black ">
-      <nav className="mx-auto w-[154px] pt-5 flex flex-col justify-center items-center">
-        <p className="text-white text-2xl">adamkeys</p>
+    <section className="bg-portfolio-black pb-10">
+      <div className="container">
+        <div className="circleImage"></div>
+        <img className="portfolioImage z-10" src={ProfileImageMobile} />
+        <img className="elongCicleImage" src={PatternRings} />
+        <nav className="mx-auto w-[154px] pb-3 flex flex-col justify-center items-center navLinks">
+          <p className="text-white text-2xl font-bold">adamkeyes</p>
+          <div className="pt-5 flex flex-row w-full justify-between">
+            {socialLinks.map((item, key) => (
+              <a
+                href={item.hrefLink}
+                target="_blank"
+                rel="noreferrer"
+                key={key}>
+                <img
+                  className={item.imageStyles}
+                  src={item.imageLink}
+                  alt={item.altTag}
+                />
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+      {/* <nav className="mx-auto w-[154px] pt-5 flex flex-col justify-center items-center navLinks">
+        <p className="text-white text-2xl">adamkeyes</p>
         <div className="pt-5 flex flex-row w-full justify-between">
-          <img className="w-[19px] h-[19px]" src={GitHubIcon} />
-          <img className="w-[19px] h-[19px]" src={FrontEndMonterIcon} />
-          <img className="w-[19px] h-[19px]" src={LinkedInIcon} />
-          <img className="w-[19px] h-[19px]" src={TwitterIcon} />
+          {socialLinks.map((item, key) => (
+            <a href={item.hrefLink} target="_blank" rel="noreferrer" key={key}>
+              <img
+                className={item.imageStyles}
+                src={item.imageLink}
+                alt={item.altTag}
+              />
+            </a>
+          ))}
         </div>
-      </nav>
-      <div className="flex flex-col items-center">
+      </nav> */}
+      <div className="pt-10 flex flex-col items-center">
         <div className="text-[40px] leading-10 text-white text-center font-bold">
           <p>Nice to meet you!</p>
           <p>
             I&apos;m{' '}
-            <span className="border-b-4 border-portfolio-green">Adam Keys</span>
+            <span className="border-b-4 border-portfolio-green">
+              Adam Keyes
+            </span>
             .
           </p>
         </div>
-        <div className="pt-6 text-base leading-6 text-white text-center font-medium">
+        <div className="pt-6 text-base leading-6 text-portfolio-grey text-center font-medium">
           <p>Based in the UK, I&apos;m a front-end developer</p>
           <p>passionate about building accessible web</p>
           <p>apps that users love.</p>

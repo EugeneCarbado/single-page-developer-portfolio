@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  position: relative;
+}
+
+.circleImage {
+  grid-area: 3 / 3 / 4 / 4;
+  background-image: url('../../images/pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position-x: 44px;
+}
+
+.portfolioImage {
+  grid-area: 1 / 2 / 4 / 3;
+}
+
+.elongCicleImage {
+  grid-area: 2 / 1 / 3 / 3;
+  position: absolute;
+  left: -118px;
+  top: 2px;
+  width: 530px;
+  height: 129px;
+}
+
+.navLinks {
+  grid-area: 1 / 2 / 2 / 3;
+}
