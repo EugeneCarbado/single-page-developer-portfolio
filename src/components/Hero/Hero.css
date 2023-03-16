@@ -4,29 +4,51 @@
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  position: relative;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 0.3fr 1.7fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 100px;
+  }
 }
 
-.circleImage {
+.circle-image {
   grid-area: 3 / 3 / 4 / 4;
   background-image: url('../../images/pattern-circle.svg');
   background-repeat: no-repeat;
   background-position: calc(100% + 65px) calc(100% + -1px);
+
+  @media screen and (min-width: 768px) {
+    grid-area: 4 / 5 / 6 / 6;
+  }
 }
 
-.portfolioImage {
+.portfolio-image {
   grid-area: 1 / 2 / 4 / 3;
+
+  @media screen and (min-width: 768px) {
+    grid-area: 1 / 4 / 6 / 6;
+  }
 }
 
-.elongCicleImage {
+.elongated-circle-image {
   grid-area: 2 / 1 / 3 / 3;
-  position: absolute;
-  left: -118px;
-  top: 2px;
-  width: 530px;
-  height: 129px;
+
+  @media screen and (min-width: 768px) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
 }
 
-.navLinks {
+.nav-links {
   grid-area: 1 / 2 / 2 / 3;
+
+  @media screen and (min-width: 768px) {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+}
+
+.hero-text {
+  @media screen and (min-width: 768px) {
+    grid-area: 2 / 1 / 6 / 5;
+  }
 }
