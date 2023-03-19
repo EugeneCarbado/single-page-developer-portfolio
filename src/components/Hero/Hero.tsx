@@ -3,8 +3,8 @@ import {socialLinks} from '../../data/links';
 import ProfileImageMobile from '../../images/image-profile-mobile.webp';
 import ProfileImageTablet from '../../images/image-profile-tablet.webp';
 // import ProfileImageDesktop from '../../images/image-profile-desktop.webp';
-import PatternRings from '../../images/pattern-rings.svg';
-import './Hero.css';
+import {cx} from '@emotion/css';
+import styles from './Hero.styles';
 
 const Hero = () => {
   const windowWidth = window.innerWidth;
@@ -13,19 +13,19 @@ const Hero = () => {
 
   return (
     <section className="pb-20">
-      <div className="container relative">
-        <div className="circle-image"></div>
+      <div className={`container relative ${cx(styles.container)}`}>
+        <div className={`${cx(styles.circleImage)}`}></div>
         <img
-          className="portfolio-image z-10"
+          className={`z-10 ${cx(styles.portfolioImage)}`}
           src={
             windowWidth < tabletMedia ? ProfileImageMobile : ProfileImageTablet
           }
         />
-        <img
-          className="elongated-circle-image absolute left-[-118px] top-[2px] w-[530px] h-[129px]"
-          src={PatternRings}
-        />
-        <nav className="mx-auto w-[154px] pb-3 flex flex-col justify-center items-center nav-links z-20">
+        <div className={`${cx(styles.elongatedCircleImage)}`}></div>
+        <nav
+          className={`mx-auto w-[154px] pb-3 flex flex-col justify-center items-center z-20 ${cx(
+            styles.navLinks,
+          )}`}>
           <p className="text-white text-2xl font-bold">adamkeyes</p>
           <div className="pt-5 flex flex-row w-full justify-between">
             {socialLinks.map((item, key) => (
