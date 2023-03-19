@@ -2,17 +2,17 @@ import React from 'react';
 import {socialLinks} from '../../data/links';
 import ProfileImageMobile from '../../images/image-profile-mobile.webp';
 import ProfileImageTablet from '../../images/image-profile-tablet.webp';
-import ProfileImageDesktop from '../../images/image-profile-desktop.webp';
+// import ProfileImageDesktop from '../../images/image-profile-desktop.webp';
 import PatternRings from '../../images/pattern-rings.svg';
 import './Hero.css';
 
 const Hero = () => {
   const windowWidth = window.innerWidth;
   const tabletMedia = 768;
-  const desktopMedia = 1024;
+  // const desktopMedia = 1024;
 
   return (
-    <section className="bg-portfolio-black pb-10">
+    <section className="pb-20">
       <div className="container relative">
         <div className="circle-image"></div>
         <img
@@ -46,14 +46,14 @@ const Hero = () => {
       </div>
       <div className="pt-10 flex flex-col items-center md:hidden">
         <div className="text-[40px] leading-10 text-white text-center font-bold">
-          <p>Nice to meet you!</p>
-          <p>
+          <h1>Nice to meet you!</h1>
+          <h1>
             I&apos;m{' '}
             <span className="border-b-4 border-portfolio-green">
               Adam Keyes
             </span>
             .
-          </p>
+          </h1>
         </div>
         <div className="pt-8 text-base leading-6 text-portfolio-grey text-center font-medium">
           <p>Based in the UK, I&apos;m a front-end developer</p>
