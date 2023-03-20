@@ -4,7 +4,7 @@ import styles from './Experience.styles';
 const Experience = () => {
   return (
     <section
-      className={`${styles.experienceImage}`}>
+      className={`${styles.experienceImage} pb-20`}>
       <div className='py-10 mx-[14px] flex flex-col items-center text-white text-center border-y-[1px]'>
         <div>
           <div className="pb-5">

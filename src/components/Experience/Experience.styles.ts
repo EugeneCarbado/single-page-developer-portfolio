@@ -5,7 +5,7 @@ const styles = {
   experienceImage: css`
     background-image: url(${PatternRings});
     background-repeat: no-repeat;
-    background-position: calc(100% + 333px) calc(100% + 67px);
+    background-position: calc(100% + 333px) calc(100% + -13px);
   `,
 };
 
