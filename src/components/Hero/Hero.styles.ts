@@ -34,7 +34,7 @@ const styles = {
     }
   `,
   elongatedCircleImage: css`
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 1 / 1 / 3 / 3;
     background-image: url(${PatternRings});
     background-repeat: no-repeat;
     background-position: calc(100% + -95px) calc(100% + -2px);

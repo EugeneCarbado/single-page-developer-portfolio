@@ -10,7 +10,7 @@ import Projects from './components/Projects/Projects';
 
 function App() {
   return (
-    <div>
+    <div className='pb-20'>
       <Hero />
       <Experience />
       <Projects />
