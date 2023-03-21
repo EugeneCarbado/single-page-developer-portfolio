@@ -7,6 +7,7 @@ import '@fontsource/space-grotesk/700.css';
 import '@fontsource/space-grotesk';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Hero />
       <Experience />
       <Projects />
-      {/* <PortfolioForm /> */}
+      <Contact />
     </div>
   );
 }

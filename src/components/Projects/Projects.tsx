@@ -3,7 +3,7 @@ import {PortfolioProjects} from '../../data/portfolio-projects';
 
 const Projects = () => {
   return (
-    <section className="mx-[14px]">
+    <section className="mx-[14px] pb-10">
       <div className="flex justify-between items-center pb-10">
         <h3 className="text-[40px] font-bold text-white">Projects</h3>
         <button className="uppercase text-white pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold">
