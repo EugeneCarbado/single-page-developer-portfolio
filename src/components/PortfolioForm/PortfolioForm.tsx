@@ -1,6 +1,8 @@
 import React from 'react';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
+import {cx} from '@emotion/css';
+import styles from './PortfolioForm.styles';
 
 interface props {
   name: string;
@@ -30,32 +32,33 @@ const PortfolioForm = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}>
-      <Form className="flex flex-col mx-[14px]">
-        <div>
-          <label
-            htmlFor="name"
-            className="absolute text-sm text-white dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+      <Form className="flex flex-col pt-[50px] border-b-[1px] pb-[87px]">
+        <div className={`relative ${cx(styles.formFields)}`}>
+          <label htmlFor="name" className="">
             Name
           </label>
-          <input
-            type="text"
-            name="name"
-            id="floating_standard"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-          />
+          <Field type="name" id="name" name="name" />
           <ErrorMessage name="name" />
         </div>
-        <div>
-          <label htmlFor="email">Email</label>
+        <div className={cx(styles.formFields)}>
+          <label htmlFor="email" className="">
+            Email
+          </label>
           <Field type="email" id="email" name="email" />
           <ErrorMessage name="email" />
         </div>
-        <div>
-          <label htmlFor="message">Message</label>
+        <div className={cx(styles.formFields)}>
+          <label htmlFor="message" className="">
+            Message
+          </label>
           <Field type="text" id="message" name="message" />
           <ErrorMessage name="message" />
         </div>
-        <button type="submit">Send message</button>
+        <button
+          type="submit"
+          className="uppercase text-white mt-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold pt-[32px] w-[144px] self-end">
+          Send message
+        </button>
       </Form>
     </Formik>
   );
