@@ -16,6 +16,14 @@ const styles = {
       height: 43px;
       outline: none;
     }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
+    input[data-autocompleted] {
+      background-color: transparent !important;
+    }
   `,
   formFieldsBorder: css`
     input {
@@ -37,6 +45,14 @@ const styles = {
 
     textarea:focus {
       border-bottom: solid 1px #4ee1a0;
+    }
+
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
+    textarea[data-autocompleted] {
+      background-color: transparent !important;
     }
   `,
   formFieldsError: css`
