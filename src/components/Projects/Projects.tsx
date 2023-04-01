@@ -3,18 +3,22 @@ import {PortfolioProjects} from '../../data/portfolio-projects';
 
 const Projects = () => {
   return (
-    <section className="mx-[14px] pb-10">
+    <section className="mx-[14px] pb-10 md:mx-auto md:px-[30px] md:max-w-screen-md">
       <div className="flex justify-between items-center pb-10">
-        <h3 className="text-[40px] font-bold text-white">Projects</h3>
+        <h3 className="text-[40px] font-bold text-white md:text-[72px]">
+          Projects
+        </h3>
         <a
           href="#contact"
           className="uppercase text-white pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
           Contact me
         </a>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-20 md:pb-14">
         {PortfolioProjects.map((item, key) => (
-          <div key={key} className="flex flex-col pb-10">
+          <div
+            key={key}
+            className="flex flex-col pb-10 md:w-[340px] md:h-[390px]">
             <img
               className="pb-5"
               src={item.portfolioImage}

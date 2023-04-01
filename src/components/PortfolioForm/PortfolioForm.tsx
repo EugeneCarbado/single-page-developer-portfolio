@@ -3,6 +3,7 @@ import {Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
 import {cx} from '@emotion/css';
 import styles from './PortfolioForm.styles';
+import ErrorWarning from '../../images/warning.svg';
 
 interface props {
   name: string;
@@ -35,7 +36,7 @@ const PortfolioForm = () => {
         return (
           <Form
             aria-autocomplete="none"
-            className="flex flex-col pt-[50px] border-b-[1px] pb-[87px]">
+            className="flex flex-col pt-[50px] pb-[87px] md:max-w-[445px] md:mx-auto">
             <div
               className={`relative mb-[32px] ${cx(
                 styles.formFields,
@@ -56,6 +57,14 @@ const PortfolioForm = () => {
                   : cx(styles.formFieldsBorder)
               } ${cx(styles.formFields)}`}>
               <Field type="email" id="email" name="email" placeholder="EMAIL" />
+              {errors.email ? (
+                <img
+                  className="absolute top-[11px] right-0"
+                  src={ErrorWarning}
+                />
+              ) : (
+                ''
+              )}
               <p
                 className={`absolute text-portfolio-error pt-[5px] right-0 animate-[shake_0.25s_ease-in-out_2s]`}>
                 <ErrorMessage name="email" />

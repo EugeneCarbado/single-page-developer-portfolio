@@ -13,7 +13,6 @@ const styles = {
     @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr 0.3fr 1.7fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      padding: 100px;
     }
   `,
   circleImage: css`
@@ -24,6 +23,7 @@ const styles = {
 
     @media screen and (min-width: 768px) {
       grid-area: 4 / 5 / 6 / 6;
+      z-index: 20;
     }
   `,
   portfolioImage: css`
@@ -40,7 +40,7 @@ const styles = {
     background-position: calc(100% + -95px) calc(100% + -2px);
 
     @media screen and (min-width: 768px) {
-      grid-area: 2 / 1 / 3 / 3;
+      grid-area: 1 / 1 / 3 / 3;
     }
   `,
   navLinks: css`
@@ -51,6 +51,8 @@ const styles = {
     }
   `,
   heroText: css`
+    display: none;
+
     @media screen and (min-width: 768px) {
       grid-area: 2 / 1 / 6 / 5;
     }
