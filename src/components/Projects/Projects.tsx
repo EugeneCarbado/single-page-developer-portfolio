@@ -6,9 +6,11 @@ const Projects = () => {
     <section className="mx-[14px] pb-10">
       <div className="flex justify-between items-center pb-10">
         <h3 className="text-[40px] font-bold text-white">Projects</h3>
-        <button className="uppercase text-white pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold">
+        <a
+          href="#contact"
+          className="uppercase text-white pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
           Contact me
-        </button>
+        </a>
       </div>
       <div className="flex flex-col">
         {PortfolioProjects.map((item, key) => (
@@ -21,7 +23,7 @@ const Projects = () => {
             <h4 className="text-white uppercase text-[24px] font-bold pb-1.5">
               {item.portfolioTile}
             </h4>
-            <div className="text-portfolio-grey uppercase pb-0.5 text-white text-[18px] font-medium flex">
+            <div className="uppercase pb-0.5 text-white text-[18px] font-medium flex">
               <p className="pr-[18px]">{item.portfolioHtml}</p>
               <p className="pr-[18px]">{item.portfolioCss}</p>
               <p>{item.portfolioJavascript}</p>
@@ -31,14 +33,14 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
                 href={item.portfolioProjectViewLink}
-                className="uppercase text-white mt-5 mr-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold">
+                className="uppercase text-white mt-5 mr-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
                 View Project
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href={item.portfolioProjectCodeLink}
-                className="uppercase text-white mt-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold">
+                className="uppercase text-white mt-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
                 View code
               </a>
             </div>

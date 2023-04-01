@@ -21,9 +21,7 @@ const onSubmit = (values: props) => {
 };
 
 const validationSchema = Yup.object({
-  name: Yup.string().required('Required!'),
-  email: Yup.string().email('Invalid email format').required('Required!'),
-  message: Yup.string().required('Required!'),
+  email: Yup.string().email('Sorry, invalid format here').required('Required!'),
 });
 
 const PortfolioForm = () => {
@@ -32,34 +30,55 @@ const PortfolioForm = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}>
-      <Form className="flex flex-col pt-[50px] border-b-[1px] pb-[87px]">
-        <div className={`relative ${cx(styles.formFields)}`}>
-          <label htmlFor="name" className="">
-            Name
-          </label>
-          <Field type="name" id="name" name="name" />
-          <ErrorMessage name="name" />
-        </div>
-        <div className={cx(styles.formFields)}>
-          <label htmlFor="email" className="">
-            Email
-          </label>
-          <Field type="email" id="email" name="email" />
-          <ErrorMessage name="email" />
-        </div>
-        <div className={cx(styles.formFields)}>
-          <label htmlFor="message" className="">
-            Message
-          </label>
-          <Field type="text" id="message" name="message" />
-          <ErrorMessage name="message" />
-        </div>
-        <button
-          type="submit"
-          className="uppercase text-white mt-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold pt-[32px] w-[144px] self-end">
-          Send message
-        </button>
-      </Form>
+      {formik => {
+        const {errors, touched} = formik;
+        return (
+          <Form
+            aria-autocomplete="none"
+            className="flex flex-col pt-[50px] border-b-[1px] pb-[87px]">
+            <div
+              className={`relative mb-[32px] ${cx(
+                styles.formFields,
+                styles.formFieldsBorder,
+              )}`}>
+              <Field
+                type="name"
+                id="name"
+                name="name"
+                placeholder="NAME"
+                className=""
+              />
+            </div>
+            <div
+              className={`relative mb-[32px]  ${
+                errors.email && touched.email
+                  ? cx(styles.formFieldsError)
+                  : cx(styles.formFieldsBorder)
+              } ${cx(styles.formFields)}`}>
+              <Field type="email" id="email" name="email" placeholder="EMAIL" />
+              <p
+                className={`absolute text-portfolio-error pt-[5px] right-0 animate-[shake_0.25s_ease-in-out_2s]`}>
+                <ErrorMessage name="email" />
+              </p>
+            </div>
+            <Field
+              type="text"
+              id="message"
+              name="message"
+              component="textarea"
+              rows="4"
+              placeholder="MESSAGE"
+              className={`bg-transparent border-b-[1px] h-[107px] text-white focus:outline-none px-[17px] pt-[5px] resize-none transition ease-in-out delay-150 focus:border-b-portfolio-green`}
+            />
+            {/* </div> */}
+            <button
+              type="submit"
+              className="uppercase text-white mt-[32px] pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold w-[144px] self-end hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
+              Send message
+            </button>
+          </Form>
+        );
+      }}
     </Formik>
   );
 };

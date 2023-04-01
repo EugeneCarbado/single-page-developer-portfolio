@@ -6,3 +6,7 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: #151515;
 }
+
+html {
+  scroll-behavior: smooth;
+}

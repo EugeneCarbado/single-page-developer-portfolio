@@ -1,9 +1,13 @@
 import React from 'react';
 import PortfolioForm from '../PortfolioForm/PortfolioForm';
+import {cx} from '@emotion/css';
+import styles from './Contact.styles';
 
 const Contact = () => {
   return (
-    <section className="bg-portfolio-bg-grey px-[14px]">
+    <section
+      id="contact"
+      className={`bg-portfolio-bg-grey px-[14px] ${cx(styles.contactImage)}`}>
       <h2 className="text-[40px] font-bold text-white text-center pt-[60px]">
         Contact
       </h2>

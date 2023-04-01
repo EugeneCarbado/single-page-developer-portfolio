@@ -60,9 +60,11 @@ const Hero = () => {
           <p>passionate about building accessible web</p>
           <p>apps that users love.</p>
         </div>
-        <button className="uppercase text-white mt-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold">
+        <a
+          href="#contact"
+          className="uppercase text-white mt-5 pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
           Contact me
-        </button>
+        </a>
       </div>
     </section>
   );
