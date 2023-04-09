@@ -64,7 +64,7 @@ const Hero = () => {
                 .
               </h1>
             </div>
-            <div className="text-[5.375rem] leading-[5.375rem] text-white text-left font-bold z-30 md:hidden lg:block">
+            <div className="text-[5.375rem] leading-[5.375rem] text-white text-left font-bold z-30 hidden lg:block">
               <h1>Nice to meet you!</h1>
               <h1>
                 I&apos;m{' '}
