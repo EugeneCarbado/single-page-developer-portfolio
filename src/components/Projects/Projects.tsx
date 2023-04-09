@@ -22,7 +22,7 @@ const Projects = () => {
         {PortfolioProjects.map((item, key) => (
           <div
             key={key}
-            className="flex flex-col pb-10 md:w-[32.5rem] md:h-[24.375rem] lg:w-[33.75rem] lg:h-[30.438rem]">
+            className="flex flex-col pb-10 md:w-[21.375rem] md:h-[24.875rem] lg:w-[33.75rem] lg:h-[30.438rem]">
             <div className="lg:relative group">
               <img
                 className=""
