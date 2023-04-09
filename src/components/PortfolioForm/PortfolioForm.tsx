@@ -36,9 +36,9 @@ const PortfolioForm = () => {
         return (
           <Form
             aria-autocomplete="none"
-            className="flex flex-col pt-[50px] pb-[87px] md:max-w-[445px] md:mx-auto">
+            className="flex flex-col pt-[3.125rem] pb-[5.438rem] md:w-[27.813rem] md:mx-auto lg:mx-0 lg:pt-0">
             <div
-              className={`relative mb-[32px] ${cx(
+              className={`relative mb-[2rem] ${cx(
                 styles.formFields,
                 styles.formFieldsBorder,
               )}`}>
@@ -51,7 +51,7 @@ const PortfolioForm = () => {
               />
             </div>
             <div
-              className={`relative mb-[32px]  ${
+              className={`relative mb-[2rem]  ${
                 errors.email && touched.email
                   ? cx(styles.formFieldsError)
                   : cx(styles.formFieldsBorder)
@@ -59,14 +59,14 @@ const PortfolioForm = () => {
               <Field type="email" id="email" name="email" placeholder="EMAIL" />
               {errors.email ? (
                 <img
-                  className="absolute top-[11px] right-0"
+                  className="absolute top-[0.688rem] right-0"
                   src={ErrorWarning}
                 />
               ) : (
                 ''
               )}
               <p
-                className={`absolute text-portfolio-error pt-[5px] right-0 animate-[shake_0.25s_ease-in-out_2s]`}>
+                className={`absolute text-portfolio-error pt-[0.313rem] right-0 animate-[shake_0.25s_ease-in-out_2s]`}>
                 <ErrorMessage name="email" />
               </p>
             </div>
@@ -77,12 +77,12 @@ const PortfolioForm = () => {
               component="textarea"
               rows="4"
               placeholder="MESSAGE"
-              className={`bg-transparent border-b-[1px] h-[107px] text-white focus:outline-none px-[17px] pt-[5px] resize-none transition ease-in-out delay-150 focus:border-b-portfolio-green`}
+              className={`bg-transparent border-b-[1px] h-[6.688rem] text-white focus:outline-none px-[1.063rem] pt-[0.313rem] resize-none transition ease-in-out delay-150 focus:border-b-portfolio-green`}
             />
             {/* </div> */}
             <button
               type="submit"
-              className="uppercase text-white mt-[32px] pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold w-[144px] self-end hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
+              className="uppercase text-white mt-[2rem] pb-2.5 border-b-2 border-portfolio-green tracking-[2.29px] font-bold w-[144px] self-end hover:-translate-y-1 hover:text-portfolio-green delay-150 transition ease-in-out">
               Send message
             </button>
           </Form>

@@ -10,6 +10,10 @@ const styles = {
     @media screen and (min-width: 768px) {
       background-position: calc(100% + 333px) calc(100% + -35px);
     }
+
+    @media screen and (min-width: 1024px) {
+      background-position: calc(100% + 244px) calc(100% + -81px);
+    }
   `,
 };
 

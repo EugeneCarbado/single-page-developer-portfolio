@@ -23,6 +23,9 @@ module.exports = {
       animation: {
         'error-shake': 'shake 2s linear infinte',
       },
+      width: {
+        'big-screen': '69.375rem',
+      },
     },
   },
   plugins: [],

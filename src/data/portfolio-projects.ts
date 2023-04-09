@@ -4,9 +4,16 @@ import ThumbNailThreeMobile from '../images/thumbnail-project-3-small.webp';
 import ThumbNailFourMobile from '../images/thumbnail-project-4-small.webp';
 import ThumbNailFiveMobile from '../images/thumbnail-project-5-small.webp';
 import ThumbNailSixMobile from '../images/thumbnail-project-6-small.webp';
+import ThumbNailOneDesktop from '../images/thumbnail-project-1-large.webp';
+import ThumbNailTwoDesktop from '../images/thumbnail-project-2-large.webp';
+import ThumbNailThreeDesktop from '../images/thumbnail-project-3-large.webp';
+import ThumbNailFourDesktop from '../images/thumbnail-project-4-large.webp';
+import ThumbNailFiveDesktop from '../images/thumbnail-project-5-large.webp';
+import ThumbNailSixDesktop from '../images/thumbnail-project-6-large.webp';
 
 interface PortfolioProjects {
-  portfolioImage: string;
+  portfolioImageSmall: string;
+  portfolioImageLarge: string;
   portfolioImageAlt: string;
   portfolioTile: string;
   portfolioHtml: string;
@@ -18,7 +25,8 @@ interface PortfolioProjects {
 
 export const PortfolioProjects: PortfolioProjects[] = [
   {
-    portfolioImage: ThumbNailOneMobile,
+    portfolioImageSmall: ThumbNailOneMobile,
+    portfolioImageLarge: ThumbNailOneDesktop,
     portfolioImageAlt: 'Design portfolio image',
     portfolioTile: 'Design portfolio',
     portfolioHtml: 'html',
@@ -30,7 +38,8 @@ export const PortfolioProjects: PortfolioProjects[] = [
       'https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x',
   },
   {
-    portfolioImage: ThumbNailTwoMobile,
+    portfolioImageSmall: ThumbNailTwoMobile,
+    portfolioImageLarge: ThumbNailTwoDesktop,
     portfolioImageAlt: 'E-learning landing page image',
     portfolioTile: 'E-learning landing page',
     portfolioHtml: 'html',
@@ -42,7 +51,8 @@ export const PortfolioProjects: PortfolioProjects[] = [
       'https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q',
   },
   {
-    portfolioImage: ThumbNailThreeMobile,
+    portfolioImageSmall: ThumbNailThreeMobile,
+    portfolioImageLarge: ThumbNailThreeDesktop,
     portfolioImageAlt: 'Todo web app image',
     portfolioTile: 'Todo web app',
     portfolioHtml: 'html',
@@ -54,7 +64,8 @@ export const PortfolioProjects: PortfolioProjects[] = [
       'https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW',
   },
   {
-    portfolioImage: ThumbNailFourMobile,
+    portfolioImageSmall: ThumbNailFourMobile,
+    portfolioImageLarge: ThumbNailFourDesktop,
     portfolioImageAlt: 'Entertainment web app image',
     portfolioTile: 'Entertainment web app',
     portfolioHtml: 'html',
@@ -66,7 +77,8 @@ export const PortfolioProjects: PortfolioProjects[] = [
       'https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X',
   },
   {
-    portfolioImage: ThumbNailFiveMobile,
+    portfolioImageSmall: ThumbNailFiveMobile,
+    portfolioImageLarge: ThumbNailFiveDesktop,
     portfolioImageAlt: 'Memory game image',
     portfolioTile: 'Memory game',
     portfolioHtml: 'html',
@@ -78,7 +90,8 @@ export const PortfolioProjects: PortfolioProjects[] = [
       'https://www.frontendmentor.io/challenges/memory-game-vse4WFPvM',
   },
   {
-    portfolioImage: ThumbNailSixMobile,
+    portfolioImageSmall: ThumbNailSixMobile,
+    portfolioImageLarge: ThumbNailSixDesktop,
     portfolioImageAlt: 'Art gallery showcase image',
     portfolioTile: 'Art gallery showcase',
     portfolioHtml: 'html',

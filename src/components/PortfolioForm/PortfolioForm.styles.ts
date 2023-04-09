@@ -5,7 +5,7 @@ const styles = {
     color: #ffffff;
     input {
       position: relative;
-      padding: 24px 17px;
+      padding: 1.5rem 17px;
       border: none;
       -webkit-appearance: none;
       -ms-appearance: none;

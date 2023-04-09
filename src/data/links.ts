@@ -3,13 +3,13 @@ import FrontEndMonterIcon from '../images/icon-frontend-mentor.svg';
 import LinkedInIcon from '../images/icon-linkedin.svg';
 import TwitterIcon from '../images/icon-twitter.svg';
 
-interface SocialLinks {
+interface SocialLinksProps {
   imageLink: string;
   altTag: string;
   hrefLink: string;
 }
 
-export const socialLinks: SocialLinks[] = [
+export const socialLinks: SocialLinksProps[] = [
   {
     imageLink: GitHubIcon,
     altTag: 'GitHub icon',

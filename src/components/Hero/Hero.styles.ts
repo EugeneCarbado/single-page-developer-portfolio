@@ -25,6 +25,10 @@ const styles = {
       grid-area: 4 / 5 / 6 / 6;
       z-index: 20;
     }
+    @media screen and (min-width: 1024px) {
+      grid-area: 4 / 2 / 6 / 6;
+      background-position: calc(100% + -385px) calc(100% + -70px);
+    }
   `,
   portfolioImage: css`
     grid-area: 1 / 2 / 4 / 3;
@@ -34,13 +38,15 @@ const styles = {
     }
   `,
   elongatedCircleImage: css`
-    grid-area: 1 / 1 / 3 / 3;
-    background-image: url(${PatternRings});
-    background-repeat: no-repeat;
-    background-position: calc(100% + -95px) calc(100% + -2px);
+    background: url(${PatternRings}) calc(100% + -200px) calc(100% + -500px)
+      no-repeat;
 
     @media screen and (min-width: 768px) {
-      grid-area: 1 / 1 / 3 / 3;
+      background-position: calc(100% + -486px) calc(100% + -433px);
+    }
+
+    @media screen and (min-width: 1024px) {
+      background-position: calc(100% + -1008px) calc(100% + -554px);
     }
   `,
   navLinks: css`
