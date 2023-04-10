@@ -3,7 +3,6 @@ import {PortfolioProjects} from '../../data/portfolio-projects';
 
 const Projects = () => {
   const windowWidth = window.innerWidth;
-  const tabletMedia = 768;
   const desktopMedia = 1024;
 
   return (
