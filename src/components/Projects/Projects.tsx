@@ -32,7 +32,7 @@ const Projects = () => {
                 }
                 alt={item.portfolioImageAlt}
               />
-              <div className="w-full h-full z-40 absolute top-0 left-0 ease-in-out transition hover:bg-black/50">
+              <div className="w-full h-full z-40 lg:absolute top-0 left-0 ease-in-out transition hover:bg-black/50">
                 <div className="flex-col items-center ease-in-out transition absolute top-[34%] right-[34%] text-center hidden lg:group-hover:flex">
                   <a
                     target="_blank"
