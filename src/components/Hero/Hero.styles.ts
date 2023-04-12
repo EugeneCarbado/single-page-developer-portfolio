@@ -57,28 +57,8 @@ const styles = {
     }
   `,
   heroText: css`
-    display: none;
-
     @media screen and (min-width: 768px) {
       grid-area: 2 / 1 / 6 / 5;
-    }
-  `,
-  heroDesktop: css`
-    display: none;
-
-    @media screen and (min-width: 1024px) {
-      display: block;
-    }
-  `,
-  heroTablet: css`
-    display: none;
-
-    @media screen and (min-width: 768px) {
-      display: block;
-    }
-
-    @media screen and (min-width: 1024px) {
-      display: none;
     }
   `,
 };
