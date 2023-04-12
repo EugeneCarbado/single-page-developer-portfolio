@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
           </nav>
           <div
-            className={`pt-10 pl-[2rem] md:flex flex-col ${cx(
+            className={`hidden pt-10 pl-[2rem] md:flex flex-col ${cx(
               styles.heroText,
             )} lg:pl-0`}>
             <div className="hidden text-[4.5rem] leading-[4.5rem] text-white text-left font-bold z-30 md:block lg:hidden">

@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/single-page-developer-portfolio-solution-htr7lORvZG)
+- Live Site URL: [Live site](https://single-page-developer-portfolio-kappa.vercel.app/)
 
 ## My process
 
