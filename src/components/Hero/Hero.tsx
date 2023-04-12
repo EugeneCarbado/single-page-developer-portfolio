@@ -54,7 +54,10 @@ const Hero = () => {
             className={`pt-10 pl-[2rem] md:flex flex-col ${cx(
               styles.heroText,
             )} lg:pl-0`}>
-            <div className="text-[4.5rem] leading-[4.5rem] text-white text-left font-bold z-30 lg:hidden">
+            <div
+              className={`text-[4.5rem] leading-[4.5rem] text-white text-left font-bold z-30 lg:hidden ${cx(
+                styles.heroTablet,
+              )}`}>
               <h1>Nice to</h1>
               <h1>
                 meet you! I&apos;m{' '}
@@ -64,7 +67,10 @@ const Hero = () => {
                 .
               </h1>
             </div>
-            <div className="text-[5.375rem] leading-[5.375rem] text-white text-left font-bold z-30 hidden lg:block">
+            <div
+              className={`text-[5.375rem] leading-[5.375rem] text-white text-left font-bold z-30 ${cx(
+                styles.heroDesktop,
+              )}`}>
               <h1>Nice to meet you!</h1>
               <h1>
                 I&apos;m{' '}
